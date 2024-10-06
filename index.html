@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+     crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
+
+    <style>
+        body{
+            background-color: #FEFCFB;
+            margin: 0 100px;
+        }
+        :root{
+            --primary-color:#FD8D3A;
+        }
+
+        .highlight{
+           color:var(--primary-color);
+        }
+.Trabook{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 48px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px;
+    gap:60px;
+}
+.navs{
+    display: flex;
+    gap: 48px;
+    align-items: center;
+
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+.loginbtn{
+    display: flex;
+    color:#FD8D3A;
+    border: none;
+    background-color: white;
+
+}
+.signupbtn{
+    padding: 12px 32px;
+    border-radius: 4px;
+    border:none;
+    color:white;
+    background-color: #FD8D3A;
+}
+.maincontent{
+    display: flex;
+    /*justify-content: space-between; */
+}
+.maintext{
+    display: flex;
+    width: 300px;
+    height: 500px;
+    font-size: larger;
+    margin-left: 48px;
+    flex-direction: column;
+    gap:30px;
+}
+.mainlogo{
+ margin-right: 200px;
+ width: 200px;
+ height: 30px;
+align-content: center;
+}
+.mainimg{
+    width:400px ;
+    height:400px;
+    margin-left:100px;
+    margin-top: 0px;
+}
+.Discoverbtn{
+    background-color: #FEFCFB;
+    color: #FD8D3A;
+    border-radius: 2px;
+    border-color: #FD8D3A;
+    padding: 10px;
+    align-items: baseline;
+    width: 150px;
+}
+.dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+
+}
+.dropdownmain{
+    display: flex;
+justify-content: center;
+}
+.dropdownsection{
+    background-color: #FFFFFF;
+    margin: 16px;
+    border: 16px;
+    padding: 16px;
+  
+}
+.dropdownsection > h2{
+    display: inline;
+}
+
+.dropdownsection > i{
+    color:var(--primary-color);
+}
+
+.things{
+    background-color: #F5F9FF;
+    padding-bottom: 48px;
+}
+.things > header{
+    text-align: center;
+    justify-content: center;
+}
+.things > p{
+    text-align: center;   
+}
+.thingscard{
+    width: 200px;
+    background-color: white;
+    padding: 26px;
+}
+
+.thingscardmain{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.Deals > header{
+    text-align: center;
+    justify-content: center;
+}
+.Deals > p{
+    text-align: center;   
+}
+.Dealsmain{
+    display: flex;
+    justify-content: center;
+    gap:24px;
+    margin: 16px;
+}
+.Dealschild{
+    background-color: white;
+    border-radius: 16px;
+    width: 400px;
+    gap: 20px;
+}
+.Dealstitle{
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.Dealstitle >h2{
+    margin: 0px;
+}
+.Dealsrating{
+    text-align: center;
+    font-size: large;
+}
+.Dealsbottom{
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666666;
+
+}
+.Dealsoldprice{
+    text-decoration: line-through;
+    color: #999999;
+    font-size: 20px;
+}
+.Dealsnewprice{
+    color: #FD8D3A;
+    background-color: rgba(250, 116, 54, 0.2);
+    border-radius: 10px;
+    font-size: 20px;
+}
+.Vacation > header{
+    text-align: center;
+    justify-content: center;
+}
+.Vacation > p{
+    text-align: center;   
+}
+.Vacationmain{
+    display: flex;
+    justify-content: center;
+    gap:24px;
+    margin: 16px;
+}
+.Vacationchild{
+    background-color: white;
+    border-radius: 16px;
+    width: 400px;
+    gap: 20px;
+}
+
+.Vacationtitle{
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.Vacationtitle >h2{
+    margin: 0px;
+}
+.Vacationrating{
+    text-align: center;
+    font-size: large;
+    color: #FD8D3A;
+}
+.Vacationbottom{
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666666;
+}
+
+    </style>
+    <header>
+        <div class="Trabook">
+            <h1>Trabook</h1>
+            <img  src="Vector.png" alt="symbol" height="30px" width="30px"/>
+        </div>
+
+        <div class="navs">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Destination">Destination</a>
+            <a href="#Tour">Tour</a>
+            <a href="#Blog">Blog</a>
+            <button class="loginbtn">Login</button>
+            <button class="signupbtn">Sign up</button>
+    
+        </div>
+    </header>
+<main class="maincontent">
+    <div class="maintext">
+        <h1>Get started your exciting <span class="highlight">journey</span> with us </h1>
+        <p style="font-size: 15px;">A Team of experienced tourism professionals will provide you with the best advice and tips for your desire place.</p>
+        <button class="Discoverbtn">Discover now</button>
+    </div>
+    <div class="mainlogo">
+      <img src="landinglogo.png" alt="landinglogo"  class="mainimg">
+    </div>
+</main>
+<section class="dropdownmain">
+<div class="dropdown">
+    <div class="dropdownsection">
+        <h2>Location</h2>
+        <i class="fa-solid fa-angle-down"></i>
+        <p>Where are you going</p>
+    </div>
+    <div class="dropdownsection">
+        <h2>Date</h2>
+        <i class="fa-solid fa-angle-down"></i>
+        <p>When you will go </p>
+    </div>
+    <div class="dropdownsection">
+        <h2>Guest</h2>
+        <i class="fa-solid fa-angle-down"></i>
+        <p>Number of guests</p>
+    </div>
+
+
+</div>
+</section>
+<section class="things">
+    <header>
+    <h1>Things you need <span class="highlight"> to do</span></h1> 
+</header>
+<p>we ensure that you'll embark on a perfectly planned,<br>safe vacation at aprice you can afford.</p>
+<div class="thingscardmain">
+    <div class="thingscard">
+        <img src="card1.png" alt="cardlogo1">
+        <h4>Sign Up</h4>
+        <p>Completes all the work associated with planning and processing</p>
+    </div>
+    <div class="thingscard">
+        <img src="card2.png" alt="cardlogo1">
+        <h4>Worth of Money</h4>
+        <p>After successful access then book from exclusive deals & pricing</p>
+    </div>
+    <div class="thingscard">
+        <img src="card3.png" alt="cardlogo1">
+        <h4>Exciting Travel</h4>
+        <p>Start and explore a wide range of exciting travel experience.</p>
+    </div>
+</div>
+</section>
+<section class="Deals">
+    <header>
+    <h1>Exclusive <span class="highlight">deals and discounts</span></h1>
+    </header>
+    <p>Discover our fantastic early booking discounts<br>& start planning your journey.</p>
+    <div class="Dealsmain">
+        <div class="Dealschild">
+            <img src="deal1.png" alt="deals1logo">
+            <div class="Dealstitle">
+                <h2>Madrid</h2>
+            <div class="Dealsrating">
+                
+                <img src="star 1.png" alt="starlogo" width="15px" height="20px">
+                <span style="font-size: 20px;">4.8</span>
+            </div>
+            </div>
+            <div class="Dealsbottom">
+                <span style="font-size: 20px;"><img src="locaton.png" alt="locationlogo" width="15px" height="20px">Spain</span>
+                
+                <div>
+                   <span class="Dealsoldprice">$950</span>
+                   <span class="Dealsnewprice">$850</span>
+
+                </div> 
+            </div>
+            
+        </div>
+        <div class="Dealschild">
+            <img src="deal2.png" alt="deals2logo">
+            <div class="Dealstitle">
+                <h2>Firenze</h2>
+            <div class="Dealsrating">
+                
+                <img src="star 1.png" alt="starlogo" width="15px" height="20px">
+                <span style="font-size: 20px;">4.5</span>
+            </div>
+            </div>
+            <div class="Dealsbottom">
+                <span style="font-size: 20px;"><img src="locaton.png" alt="locationlogo" width="15px" height="20px">Italy</span>
+                
+                <div>
+                   <span class="Dealsoldprice">$850</span>
+                   <span class="Dealsnewprice">$750</span>
+
+                </div> 
+            </div>
+            
+        </div>
+        <div class="Dealschild">
+            <img src="deal3.png" alt="deals3logo">
+            <div class="Dealstitle">
+                <h2>Paris</h2>
+            <div class="Dealsrating">
+                
+                <img src="star 1.png" alt="starlogo" width="15px" height="20px">
+                <span style="font-size: 20px;">4.4</span>
+            </div>
+            </div>
+            <div class="Dealsbottom">
+                <span style="font-size: 20px;"><img src="locaton.png" alt="locationlogo" width="15px" height="20px">France</span>
+                
+                <div>
+                   <span class="Dealsoldprice">$699</span>
+                   <span class="Dealsnewprice">$599</span>
+
+                </div> 
+            </div>
+            
+        </div>
+        <div class="Dealschild">
+            <img src="deal4.png" alt="deals3logo">
+            <div class="Dealstitle">
+                <h2>London</h2>
+            <div class="Dealsrating">
+                
+                <img src="star 1.png" alt="starlogo" width="15px" height="20px">
+                <span style="font-size: 20px;">4.8</span>
+            </div>
+            </div>
+            <div class="Dealsbottom">
+                <span style="font-size: 20px;"><img src="locaton.png" alt="locationlogo" width="15px" height="20px">UK</span>
+                
+                <div>
+                   <span class="Dealsoldprice">$850</span>
+                   <span class="Dealsnewprice">$850</span>
+
+                </div> 
+            </div>
+            
+        </div>
+    </div>
+</section>
+<section class="Vacation">
+    <header>
+        <h1>Best <span class="highlight">vacation plan</span></h1>
+        </header>
+        <p>Plan your perfect vacation with our travel agency. Choose<br>among hundreds of all-inclusive offers!</p>
+<div class="Vacationmain">
+    <div class="Vacationchild">
+        <img src="vacation1.png" alt="vaction1logo">
+        <div class="Vacationtitle">
+            <h2>Rome,Italy</h2>
+            <div class="Vacationratings">
+                <span style="color: #FD8D3A;font-size: 20px;">$5,42k</span>
+
+            </div>
+        </div>
+        <div class="Vacationbottom">
+            <span style="font-size: 20px;"><img src="Navigation.png" alt="Arrowlogo" width="15px" height="20px">10 days Trip</span>
+            <div>
+                <img src="star 1.png" alt="starlogo" width="15px" height="20px">
+                <span style="font-size: 20px;">4.8</span>
+            </div>
+        </div>
+    </div>
+    <div class="Vacationchild">
+        <img src="vacation2.png" alt="vaction1logo">
+        <div class="Vacationtitle">
+            <h2>London,UK</h2>
+            <div class="Vacationratings">
+                <span style="color: #FD8D3A; font-size: 20px;">$2,42k</span>
+
+            </div>
+        </div>
+        <div class="Vacationbottom">
+            <span style="font-size: 20px;"><img src="Navigation.png" alt="Arrowlogo" width="15px" height="20px">07 days Trip</span>
+            <div>
+                <img src="star 1.png" alt="starlogo" width="15px" height="20px">
+                <span style="font-size: 20px;">4.7</span>
+            </div>
+        </div>
+    </div>
+    <div class="Vacationchild">
+        <img src="vacation3.png" alt="vaction1logo">
+        <div class="Vacationtitle">
+            <h2>Osaka,Japan</h2>
+            <div class="Vacationratings">
+                <span style="color: #FD8D3A; font-size: 20px;">$5,42k</span>
+
+            </div>
+        </div>
+        <div class="Vacationbottom">
+            <span style="font-size: 20px;"><img src="Navigation.png" alt="Arrowlogo" width="15px" height="20px">10 days Trip</span>
+            <div>
+                <img src="star 1.png" alt="starlogo" width="15px" height="20px">
+                <span style="font-size: 20px;">4.8</span>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</section>
+</body>
+</html>
